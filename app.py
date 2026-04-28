@@ -12,7 +12,7 @@ st.markdown("""
     </h1>
 """, unsafe_allow_html=True)
 
-API_URL = "https://emotion-classificator.onrender.com"
+API_URL = "https://emotion-classificator.onrender.com/predict"
 
 EMOJI = {
     "Angry": "😠",
