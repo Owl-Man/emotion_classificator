@@ -12,7 +12,6 @@ st.markdown("""
     </h1>
 """, unsafe_allow_html=True)
 
-# ←←← ИЗМЕНИ НА СВОЙ URL ПОСЛЕ ДЕПЛОЯ НА RENDER ←←←
 API_URL = "https://emotion-classificator.onrender.com"
 
 EMOJI = {
