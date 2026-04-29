@@ -8,7 +8,7 @@ import tensorflow as tf
 app = FastAPI(title="Классификатор эмоций лица")
 
 # === ЗАГРУЗКА МОДЕЛИ (TFLite) ===
-interpreter = tf.lite.Interpreter(model_path="model_dynamic_quant_b1.tflite")
+interpreter = tf.lite.Interpreter(model_path="model_dynamic_quant.tflite")
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()

@@ -29,7 +29,7 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file)
     
     # Показываем загруженное изображение
-    st.image(image, caption="Загруженное изображение", use_container_width=True)
+    st.image(image, caption="Загруженное изображение", width=250)
     
     if st.button("🔍 Определить эмоцию", type="primary", use_container_width=True):
         with st.spinner("Модель анализирует эмоцию..."):
