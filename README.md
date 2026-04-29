@@ -39,12 +39,13 @@
 <img width="790" height="489" alt="Без имени" src="https://github.com/user-attachments/assets/e4dcbcd9-19b4-4ee6-96fb-93d2b65bfaf7" />
 
 
+
 <img width="989" height="590" alt="2" src="https://github.com/user-attachments/assets/989a836c-eb40-4661-a100-915b7f36dfe5" />
 
 
 **Вывод:**  
 Лучшей моделью по совокупности метрик (в первую очередь по F1-мере) стала **CNN (BatchNorm + Dropout)**.  
-Она была сохранена под именем `best_emotion_model.tflite` и использована для дальнейшего развёртывания.
+Она была сохранена под именем `model_dynamic_quant.tflite` и использована для дальнейшего развёртывания.
 
 ---
 
@@ -95,6 +96,6 @@ emotion-classifier/
 
 🛠 Локальный запуск
 1. Запуск бэкенда (FastAPI):
-Bashuvicorn main:app --reload
+uvicorn main:app --reload
 2. Запуск фронтенда (Streamlit):
-Bashstreamlit run app.py
+streamlit run app.py
